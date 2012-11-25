@@ -1,0 +1,6 @@
+# English strings go here for Rails i18n
+cs:
+  label_draft_saved_time: "Koncept uložen v %{value}"
+  label_draft_pending: "Čekající koncept, uložen před %{time} : %{restore} nebo %{delete}"
+  label_draft_restore: "obnovit"
+  label_draft_delete: "smazat"

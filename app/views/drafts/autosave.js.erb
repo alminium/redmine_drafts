@@ -1,0 +1,5 @@
+<% if @saved %>
+    $('#draft-status').html(<%= j render :partial => "saved" %>)
+<% else %>
+    $('#draft-status').html(<%= j render :partial => "text" %>)
+<% end %>
