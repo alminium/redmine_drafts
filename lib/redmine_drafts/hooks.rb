@@ -15,7 +15,9 @@ module RedmineDrafts
 
     # Add our css/js on each page
     def view_layouts_base_html_head(context)
-      javascript_include_tag('jquery.observe-form.js', :plugin => 'redmine_drafts')
+      if context[:controller].class.name == 'IssuesController'
+        javascript_include_tag('jquery.observe-form.js', :plugin => 'redmine_drafts')
+      end
     end
   end
 end
